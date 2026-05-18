@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Gursha Restaurant | Reservations | 4 Kilo Addis Ababa</title>
+    <meta name="description" content="Contact Gursha Restaurant at 4 Kilo, Addis Ababa. Reserve a table, place an order, or inquire about events and catering.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <div><i class="fas fa-map-marker-alt"></i> <span>4 Kilo, Addis Ababa</span></div>
+    <div><i class="fas fa-clock"></i> Open Daily: <span>7:00 AM - 11:00 PM</span></div>
+    <div><i class="fas fa-phone"></i> <span>+251 900 000 000</span></div>
+</div>
+
+<header class="nav-bar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo"><div class="logo-icon">🍽️</div><div class="logo-text">Gursha<span>RESTAURANT</span></div></a>
+        <button class="mobile-menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        <div class="nav-overlay"></div>
+        <ul class="nav-links">
+            <button class="nav-close-btn">&times;</button>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="contact.html" class="nav-cta">Reserve a Table</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="page-header" style="background: linear-gradient(0deg, rgba(44,24,16,0.9) 0%, rgba(44,24,16,0.5) 100%), url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1600&q=80') center/cover no-repeat;">
+    <div class="page-header-content">
+        <h1>Contact Us</h1>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    </div>
+</section>
+
+<div class="container">
+    <section class="section">
+        <div class="section-header reveal">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">We'd Love to <span>Hear From You</span></h2>
+            <div class="section-line"></div>
+            <p class="section-desc">Reservations, inquiries, feedback — we're here for you</p>
+        </div>
+
+        <!-- Contact Grid -->
+        <div class="contact-grid reveal">
+            <div class="contact-info">
+                <h3>Gursha Restaurant</h3>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-text"><h4>Address</h4><p>4 Kilo, Addis Ababa, Ethiopia</p></div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-text"><h4>Phone</h4><p>+251 900 000 000</p></div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text"><h4>Email</h4><p>gursha@email.com</p></div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <div class="contact-text"><h4>Hours</h4><p>Open Daily: 7:00 AM - 11:00 PM</p></div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name *" id="contactName" required>
+                <input type="email" placeholder="Email Address *" id="contactEmail" required>
+                <input type="tel" placeholder="Phone Number" id="contactPhone">
+                <select id="contactSubject">
+                    <option value="">Select Subject</option>
+                    <option value="reservation">Table Reservation</option>
+                    <option value="order">Place an Order</option>
+                    <option value="event">Event Inquiry</option>
+                    <option value="catering">Catering Service</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Your Message *" id="contactMessage" required></textarea>
+                <button onclick="submitContactForm()"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </div>
+        </div>
+
+        <!-- Hours Table -->
+        <div class="section-header reveal" style="margin-top:60px;">
+            <div class="section-label">Opening Hours</div>
+            <h2 class="section-title">When <span>We're Open</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="reveal" style="max-width:600px;margin:0 auto;">
+            <table class="hours-table">
+                <thead><tr><th>Day</th><th>Hours</th></tr></thead>
+                <tbody>
+                    <tr><td>Monday - Thursday</td><td>7:00 AM - 10:00 PM</td></tr>
+                    <tr><td>Friday - Saturday</td><td>7:00 AM - 11:00 PM</td></tr>
+                    <tr><td>Sunday</td><td>8:00 AM - 9:00 PM</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="section-header reveal" style="margin-top:60px;">
+            <div class="section-label">Find Us</div>
+            <h2 class="section-title">Our <span>Location</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="map-container reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5000000000!2d38.7500000!3d9.0300000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDEnNDguMCJOIDM4wrA0NScwMC4wIkU!5e0!3m2!1sen!2set!4v1600000000000" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" title="Gursha Location"></iframe>
+        </div>
+    </section>
+</div>
+
+<!-- Order Section -->
+<div class="container">
+    <section class="section">
+        <div class="section-header reveal">
+            <div class="section-label">Order Online</div>
+            <h2 class="section-title">Place Your <span>Order</span></h2>
+            <div class="section-line"></div>
+            <p class="section-desc">Fill out the form and we'll call you to confirm</p>
+        </div>
+        <div class="order-form-section reveal">
+            <div class="order-form">
+                <div class="order-form-grid">
+                    <div>
+                        <input type="text" placeholder="Your Name *" id="orderName" required>
+                        <input type="tel" placeholder="Phone Number *" id="orderPhone" required>
+                        <select id="orderType">
+                            <option value="">Order Type</option>
+                            <option value="dine-in">Dine In</option>
+                            <option value="takeaway">Takeaway</option>
+                            <option value="delivery">Delivery</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Order Details *" id="orderDetails" required></textarea>
+                        <button onclick="submitOrder()"><i class="fas fa-paper-plane"></i> Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-col"><h4>Gursha Restaurant</h4><p>Authentic Ethiopian cuisine at 4 Kilo, Addis Ababa.</p></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-map-marker-alt"></i> 4 Kilo, Addis Ababa</p><p><i class="fas fa-phone"></i> +251 900 000 000</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Gursha Restaurant.</p><p class="footer-credit">Designed by <a href="https://addispower.pages.dev" target="_blank">AddisPower</a></p></div>
+</footer>
+
+<a href="https://wa.me/251900000000" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+</body>
+</html>
