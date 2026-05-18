@@ -2,26 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Menu | Gursha Restaurant | 4 Kilo Addis Ababa</title>
-    <meta name="description" content="Explore Gursha Restaurant's full menu - traditional Ethiopian dishes, breakfast, coffee ceremony, and more at 4 Kilo, Addis Ababa.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore Gursha Restaurant's full menu - Breakfast, Lunch, Traditional Ethiopian dishes, Coffee Ceremony & Drinks at 4 Kilo, Addis Ababa.">
+    <meta property="og:title" content="Gursha Restaurant Menu | 4 Kilo Addis Ababa">
+    <meta property="og:description" content="Authentic Ethiopian cuisine - Breakfast, Lunch, Traditional dishes, and Premium Coffee at 4 Kilo.">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Marcellus&family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- Top Bar -->
 <div class="topbar">
     <div><i class="fas fa-map-marker-alt"></i> <span>4 Kilo, Addis Ababa</span></div>
     <div><i class="fas fa-clock"></i> Open Daily: <span>7:00 AM - 11:00 PM</span></div>
     <div><i class="fas fa-phone"></i> <span>+251 900 000 000</span></div>
 </div>
 
+<!-- Navigation -->
 <header class="nav-bar">
     <div class="nav-inner">
-        <a href="index.html" class="logo"><div class="logo-icon">🍽️</div><div class="logo-text">Gursha<span>RESTAURANT</span></div></a>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">🍽️</div>
+            <div class="logo-text">Gursha<span>RESTAURANT</span></div>
+        </a>
         <button class="mobile-menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
         <div class="nav-overlay"></div>
         <ul class="nav-links">
@@ -37,7 +42,8 @@
     </div>
 </header>
 
-<section class="page-header">
+<!-- Page Header -->
+<section class="page-header" style="background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 100%), url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80') center/cover no-repeat;">
     <div class="page-header-content">
         <h1>Our Menu</h1>
         <div class="breadcrumb"><a href="index.html">Home</a> / Menu</div>
@@ -47,54 +53,126 @@
 <div class="container">
     <section class="section">
         <div class="section-header reveal">
-            <div class="section-label">Culinary Delights</div>
-            <h2 class="section-title">Traditional <span>Ethiopian</span> Cuisine</h2>
+            <div class="section-label">Culinary Excellence</div>
+            <h2 class="section-title">Authentic <span>Ethiopian</span> Cuisine</h2>
             <div class="section-line"></div>
+            <p class="section-desc">From sunrise breakfast to traditional feasts — every dish tells a story</p>
         </div>
 
-        <!-- Traditional Dishes -->
+        <!-- Menu Hero Card -->
+        <div class="reveal" style="background: linear-gradient(135deg, rgba(198,123,75,0.15), rgba(212,168,83,0.1)); border: 1px solid rgba(198,123,75,0.3); border-radius: 24px; padding: 30px; text-align: center; margin-bottom: 40px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 250px;">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Ethiopian Food Platter" style="width: 100%; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
+            </div>
+            <div style="flex: 1; min-width: 250px; text-align: left;">
+                <h3 style="font-family: 'Cinzel Decorative', serif; font-size: 1.8rem; color: var(--gold); margin-bottom: 12px;">The Gursha Experience</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">Every meal at Gursha is a celebration of Ethiopia's rich culinary heritage. From our traditional coffee ceremony to authentic dishes made with fresh, local ingredients — we bring the true taste of Ethiopia to your table.</p>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div><span style="color: var(--gold); font-weight: 700; font-size: 1.5rem;">20+</span><br><span style="color: var(--text-muted); font-size: 0.8rem;">Traditional Dishes</span></div>
+                    <div><span style="color: var(--gold); font-weight: 700; font-size: 1.5rem;">100%</span><br><span style="color: var(--text-muted); font-size: 0.8rem;">Fresh Ingredients</span></div>
+                    <div><span style="color: var(--gold); font-weight: 700; font-size: 1.5rem;">4.9</span><br><span style="color: var(--text-muted); font-size: 0.8rem;">Customer Rating</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ BREAKFAST ============ -->
         <div class="menu-category reveal">
-            <h3>🥘 Traditional Dishes</h3>
+            <h3>☀️ Breakfast</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-info"><h4>Combo Fasting</h4><p>Hearty vegan platter</p></div><div class="menu-item-price">250 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Egg w/ meat</h4><p>Scrambled eggs & minced beef</p></div><div class="menu-item-price">250 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Special Fetora</h4><p>Layered pancake, honey & cheese</p></div><div class="menu-item-price">350 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Normal Fetora</h4><p>Classic folded pancake</p></div><div class="menu-item-price">200 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Special Chechebsa</h4><p>Teff bread, egg, honey, yoghurt</p></div><div class="menu-item-price">250 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Normal Foul</h4><p>Bean, chili, onion, bread</p></div><div class="menu-item-price">180 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Special Foul</h4><p>Bean, yoghurt, egg, avocado</p></div><div class="menu-item-price">250 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Tomato Cheese</h4><p>Toasted with fresh tomato & cheese</p></div><div class="menu-item-price">170 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Egg Sandwich</h4><p>Toasted omelette sandwich</p></div><div class="menu-item-price">200 ETB</div></div>
+            </div>
+        </div>
+
+        <!-- ============ TRADITIONAL ETHIOPIAN FOOD ============ -->
+        <div class="menu-category reveal">
+            <h3>🔥 Traditional Ethiopian Food</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-info"><h4>Lamb Tibs</h4><p>Sautéed lamb with onions & peppers</p></div><div class="menu-item-price">680 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Lamb Tibs Tefresho</h4><p>Rare lamb tibs with spices</p></div><div class="menu-item-price">700 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Okle</h4><p>Traditional spiced dish</p></div><div class="menu-item-price">600 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Chikena Tibs</h4><p>Sautéed chicken with vegetables</p></div><div class="menu-item-price">600 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Chikena Tefresho</h4><p>Rare chicken tibs with mitmita</p></div><div class="menu-item-price">650 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Kitto</h4><p>Premium traditional delicacy</p></div><div class="menu-item-price">1,200 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Quanta Firfir</h4><p>Dried beef with injera pieces</p></div><div class="menu-item-price">370 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Kiba Firfir</h4><p>Spiced butter firfir</p></div><div class="menu-item-price">210 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Tibes Firfir</h4><p>Fried meat with injera</p></div><div class="menu-item-price">320 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Shiro Bekibe</h4><p>Chickpea stew with butter</p></div><div class="menu-item-price">300 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Dullet</h4><p>Minced meat with spices</p></div><div class="menu-item-price">330 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Derkosh Firfir Beseg</h4><p>Sun-dried injera with beef</p></div><div class="menu-item-price">380 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Bozena Shiro</h4><p>Shiro with beef chunks</p></div><div class="menu-item-price">350 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mahberawi</h4><p>Grand mixed platter</p></div><div class="menu-item-price">1,200 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Yefisk Agelgel</h4><p>Fish delicacy platter</p></div><div class="menu-item-price">1,000 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Gomen Kitto</h4><p>Minced kale with spices</p></div><div class="menu-item-price">300 ETB</div></div>
+            </div>
+        </div>
+
+        <!-- ============ LUNCH ============ -->
+        <div class="menu-category reveal">
+            <h3>🍛 Lunch Specials</h3>
             <div class="menu-grid">
                 <div class="menu-item"><div class="menu-item-info"><h4>Doro Wat</h4><p>Spicy chicken stew with boiled egg</p></div><div class="menu-item-price">450 ETB</div></div>
                 <div class="menu-item"><div class="menu-item-info"><h4>Kitfo</h4><p>Minced beef with spiced butter & mitmita</p></div><div class="menu-item-price">380 ETB</div></div>
-                <div class="menu-item"><div class="menu-item-info"><h4>Tibs</h4><p>Sautéed beef/lamb with onions & peppers</p></div><div class="menu-item-price">350 ETB</div></div>
-                <div class="menu-item"><div class="menu-item-info"><h4>Shiro</h4><p>Chickpea stew with berbere spice</p></div><div class="menu-item-price">180 ETB</div></div>
-                <div class="menu-item"><div class="menu-item-info"><h4>Gomen</h4><p>Collard greens with spiced butter</p></div><div class="menu-item-price">150 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Gored Gored</h4><p>Cubed raw beef with spices</p></div><div class="menu-item-price">400 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Shekla Tibs</h4><p>Sizzling meat on clay pot</p></div><div class="menu-item-price">500 ETB</div></div>
                 <div class="menu-item"><div class="menu-item-info"><h4>Beyaynetu</h4><p>Combination platter with injera</p></div><div class="menu-item-price">550 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Shiro Tegabino</h4><p>Thick chickpea stew in clay pot</p></div><div class="menu-item-price">280 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Misir Wat</h4><p>Spiced red lentil stew</p></div><div class="menu-item-price">220 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Gomen Besega</h4><p>Collard greens with beef</p></div><div class="menu-item-price">280 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Pasta with Meat Sauce</h4><p>Ethiopian-style pasta</p></div><div class="menu-item-price">250 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Rice with Chicken</h4><p>Spiced rice & grilled chicken</p></div><div class="menu-item-price">350 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Fish Dulet</h4><p>Spiced minced fish</p></div><div class="menu-item-price">320 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Vegetable Combo</h4><p>Mixed vegetables with injera</p></div><div class="menu-item-price">280 ETB</div></div>
             </div>
         </div>
 
-        <!-- Breakfast -->
+        <!-- ============ COFFEE & DRINKS ============ -->
         <div class="menu-category reveal">
-            <h3>🍳 Breakfast</h3>
-            <div class="menu-grid">
-                <div class="menu-item"><div class="menu-item-info"><h4>Chechebsa</h4><p>Teff bread with honey & yoghurt</p></div><div class="menu-item-price">200 ETB</div></div>
-                <div class="menu-item"><div class="menu-item-info"><h4>Ful</h4><p>Fava beans with bread & avocado</p></div><div class="menu-item-price">180 ETB</div></div>
-                <div class="menu-item"><div class="menu-item-info"><h4>Scrambled Eggs</h4><p>With tomato, onion & green chili</p></div><div class="menu-item-price">150 ETB</div></div>
-            </div>
-        </div>
-
-        <!-- Drinks -->
-        <div class="menu-category reveal">
-            <h3>☕ Drinks & Coffee Ceremony</h3>
+            <h3>☕ Coffee Ceremony & Drinks</h3>
             <div class="menu-grid">
                 <div class="menu-item"><div class="menu-item-info"><h4>Traditional Coffee Ceremony</h4><p>Complete ceremony with incense</p></div><div class="menu-item-price">300 ETB</div></div>
                 <div class="menu-item"><div class="menu-item-info"><h4>Macchiato</h4><p>Classic Ethiopian coffee</p></div><div class="menu-item-price">80 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Espresso</h4><p>Pure Ethiopian espresso shot</p></div><div class="menu-item-price">70 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Cappuccino</h4><p>Foamy coffee delight</p></div><div class="menu-item-price">120 ETB</div></div>
                 <div class="menu-item"><div class="menu-item-info"><h4>Tea</h4><p>Ethiopian spiced tea</p></div><div class="menu-item-price">50 ETB</div></div>
-                <div class="menu-item"><div class="menu-item-info"><h4>Fresh Juice</h4><p>Avocado, Mango, Papaya</p></div><div class="menu-item-price">150 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Special Tea</h4><p>Premium blend with herbs</p></div><div class="menu-item-price">90 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Fresh Juice</h4><p>Avocado, Mango, Papaya, Orange</p></div><div class="menu-item-price">150 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mixed Juice</h4><p>Seasonal fruit blend</p></div><div class="menu-item-price">180 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Soft Drinks</h4><p>Coca-Cola, Sprite, Fanta, Ambo</p></div><div class="menu-item-price">60 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mineral Water</h4><p>Still / Sparkling</p></div><div class="menu-item-price">40 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Hot Chocolate</h4><p>Rich chocolate with cream</p></div><div class="menu-item-price">110 ETB</div></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Latte</h4><p>Smooth coffee with steamed milk</p></div><div class="menu-item-price">100 ETB</div></div>
             </div>
         </div>
     </section>
 </div>
 
+<!-- CTA -->
+<div class="container">
+    <section class="section" style="text-align:center;">
+        <div class="reveal">
+            <h2 class="section-title">Ready to <span>Experience</span> Gursha?</h2>
+            <p class="section-desc" style="margin-bottom:24px;">Reserve your table and taste the best of Ethiopian cuisine at 4 Kilo</p>
+            <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Reserve Your Table</a>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
 <footer class="footer">
     <div class="footer-grid">
-        <div class="footer-col"><h4>Gursha Restaurant</h4><p>Authentic Ethiopian cuisine at 4 Kilo, Addis Ababa.</p></div>
+        <div class="footer-col"><h4>Gursha Restaurant</h4><p>Authentic Ethiopian cuisine at 4 Kilo, Addis Ababa. Traditional flavors, modern elegance.</p></div>
         <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="contact.html">Contact</a></div>
         <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-map-marker-alt"></i> 4 Kilo, Addis Ababa</p><p><i class="fas fa-phone"></i> +251 900 000 000</p></div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 Gursha Restaurant.</p><p class="footer-credit">Designed by <a href="https://addispower.pages.dev" target="_blank">AddisPower</a></p></div>
+    <div class="footer-bottom"><p>&copy; 2026 Gursha Restaurant. All rights reserved.</p><p class="footer-credit">Designed by <a href="https://addispower.pages.dev" target="_blank">AddisPower</a></p></div>
 </footer>
 
 <a href="https://wa.me/251900000000" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
